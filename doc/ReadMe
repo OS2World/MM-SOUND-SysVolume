@@ -1,0 +1,18 @@
+=== HTML2HLP ===
+Script to interpret and convert the HTML page to a compiled help file
+
+1 Compile
+======
+1.a Prerequisite
+______
+IPF Compiler ( Available with the IBM Developer's Toolkit version 4.5 )
+1 HTML page ( Mixed or pure HTML 3.2 and/or HTML 4.0 )
+
+1.b Usage
+______
+Drag & drop the HTML file on the script
+The script will write 2 additional html-pages with adjusted data to suite the capabilities of the script
+IPFC will run during "Pass 9" and the output show you if the .ipf-file genereated by the script contains errors
+You may adjust the original .html-file or the .ipf-file generated
+Rerun the script if you adjust the html file or run ipfc by hand if you adjust the .ipf-file
+See the documentation for the IPFC compiler to get more options

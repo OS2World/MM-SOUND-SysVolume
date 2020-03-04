@@ -1,0 +1,124 @@
+
+/* OS/2 Warp Resource Script File - Created by Integrated Resource Editor */
+
+#define INCL_WINSYS
+#define INCL_WINBIDI
+#define INCL_WINSTDDLGS
+#define INCL_WINSTDSPIN
+#define INCL_NLS
+#define INCL_SW
+
+#include <os2.h>
+
+//#include "d:\programs\drdialog\stub\stub.h"
+
+BITMAP      101 "b0000065.bmp"
+BITMAP      102 "b0000066.bmp"
+BITMAP      103 "b0000067.bmp"
+BITMAP      104 "b0000068.bmp"
+BITMAP      105 "b0000069.bmp"
+BITMAP      106 "b000006a.bmp"
+BITMAP      107 "b000006b.bmp"
+BITMAP      108 "b000006c.bmp"
+BITMAP      109 "b000006d.bmp"
+BITMAP      110 "b000006e.bmp"
+BITMAP      111 "b000006f.bmp"
+BITMAP      112 "b0000070.bmp"
+BITMAP      113 "b0000071.bmp"
+BITMAP      114 "b0000072.bmp"
+BITMAP      115 "b0000073.bmp"
+BITMAP      116 "b0000074.bmp"
+BITMAP      117 "b0000075.bmp"
+BITMAP      118 "b0000076.bmp"
+BITMAP      119 "b0000077.bmp"
+BITMAP      120 "b0000078.bmp"
+BITMAP      121 "b0000079.bmp"
+BITMAP      122 "b000007a.bmp"
+BITMAP      123 "b000007b.bmp"
+BITMAP      124 "b000007c.bmp"
+BITMAP      125 "b000007d.bmp"
+BITMAP      126 "b000007e.bmp"
+BITMAP      127 "b000007f.bmp"
+BITMAP      721 "b00002d1.bmp"
+BITMAP      722 "b00002d2.bmp"
+BITMAP      723 "b00002d3.bmp"
+BITMAP      725 "b00002d5.bmp"
+BITMAP      726 "b00002d6.bmp"
+BITMAP      727 "b00002d7.bmp"
+BITMAP      728 "b00002d8.bmp"
+BITMAP      8000 "b0001f40.bmp"
+BITMAP      8001 "b0001f41.bmp"
+BITMAP      8002 "b0001f42.bmp"
+BITMAP      8003 "b0001f43.bmp"
+BITMAP      8004 "b0001f44.bmp"
+BITMAP      8005 "b0001f45.bmp"
+BITMAP      8006 "b0001f46.bmp"
+BITMAP      8007 "b0001f47.bmp"
+BITMAP      8008 "b0001f48.bmp"
+BITMAP      8009 "b0001f49.bmp"
+BITMAP      8010 "b0001f4a.bmp"
+BITMAP      8011 "b0001f4b.bmp"
+BITMAP      8012 "b0001f4c.bmp"
+BITMAP      8013 "b0001f4d.bmp"
+BITMAP      8014 "b0001f4e.bmp"
+BITMAP      8015 "b0001f4f.bmp"
+BITMAP      8016 "b0001f50.bmp"
+BITMAP      8017 "b0001f51.bmp"
+BITMAP      9999 "b000270f.bmp"
+
+DEFAULTICON  "i0000016.ico"
+
+ICON        998 "i00003e7.ico"
+
+DLGTEMPLATE 100 437
+BEGIN
+    DIALOG "Console window", 100, 0, 0, 267, 103, FS_NOBYTEALIGN | FS_SIZEBORDER |
+                WS_CLIPSIBLINGS | WS_SAVEBITS | WS_VISIBLE, FCF_TITLEBAR |
+                FCF_MAXBUTTON
+    BEGIN
+        CONTROL "",                    102, 25, 2, 240, 83, WC_COMBOBOX,
+                                            CBS_DROPDOWN | ES_ANY |
+                                            LS_HORZSCROLL | WS_GROUP |
+                                            WS_TABSTOP | WS_VISIBLE
+        CONTROL "X",                   211, 25, 2, 20, 10, WC_BUTTON,
+                                            BS_PUSHBUTTON | BS_DEFAULT |
+                                            BS_NOPOINTERFOCUS
+        CONTROL "",                    101, 23, 0, 242, 75, WC_LISTBOX,
+                                            LS_NOADJUSTPOS | LS_HORZSCROLL |
+                                            WS_TABSTOP | WS_VISIBLE
+        CONTROL "",                    205, 23, 2, 63, 98, WC_COMBOBOX,
+                                            CBS_DROPDOWNLIST | ES_ANY |
+                                            WS_TABSTOP | WS_VISIBLE
+        CONTROL "Variables:",          208, 88, 90, 46, 10, WC_STATIC, SS_TEXT |
+                                            DT_RIGHT | DT_VCENTER | WS_VISIBLE
+        CONTROL "#727",                207, 1, 86, 20, 16, "ICONBUTTON",
+                                            WS_VISIBLE
+        CONTROL "#721",                201, 1, 70, 20, 16, "ICONBUTTON",
+                                            WS_VISIBLE
+        CONTROL "#722",                202, 1, 54, 20, 16, "ICONBUTTON",
+                                            WS_VISIBLE
+        CONTROL "#723",                203, 1, 38, 20, 16, "ICONBUTTON",
+                                            WS_VISIBLE
+        CONTROL "#725",                204, 1, 22, 20, 16, "ICONBUTTON",
+                                            WS_VISIBLE
+        CONTROL "",                    206, 137, 2, 128, 98, WC_COMBOBOX,
+                                            CBS_DROPDOWNLIST | ES_ANY |
+                                            LS_HORZSCROLL | WS_TABSTOP |
+                                            WS_VISIBLE
+    END
+END
+
+DLGTEMPLATE 200 437
+BEGIN
+    DIALOG "Input", 200, 126, 144, 269, 13, FS_NOBYTEALIGN | FS_DLGBORDER |
+                WS_CLIPSIBLINGS | WS_SAVEBITS | WS_VISIBLE, FCF_TITLEBAR
+    BEGIN
+        CONTROL "",                    731, 2, 2, 217, 9, WC_ENTRYFIELD,
+                                            ES_AUTOSCROLL | ES_MARGIN | ES_ANY |
+                                            WS_GROUP | WS_TABSTOP | WS_VISIBLE
+        CONTROL "Enter",               732, 221, 1, 45, 10, WC_BUTTON,
+                                            BS_PUSHBUTTON | BS_DEFAULT |
+                                            BS_NOPOINTERFOCUS | WS_TABSTOP |
+                                            WS_VISIBLE
+    END
+END

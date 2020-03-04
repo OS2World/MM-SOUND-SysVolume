@@ -1,0 +1,29 @@
+:artwork		img		CALL textstyle "img"
+:p.		p	/p
+		span	/span	CALL textstyle "span"
+		div	/div
+.br		br
+		a	/a	CALL chk_lnk
+:h1		h1	/h1	CALL chk_hd
+:h2		h2	/h2	CALL chk_hd
+:h3		h3	/h3	CALL chk_hd
+:h4		h4	/h4	CALL chk_hd
+:h5		h5	/h5	CALL chk_hd
+:hp2.	:ehp2.	b	/b	 
+:table	:etable.	table	/table	CALL calc_table_length
+:row.		tr	/tr
+:c.		td	/td
+		center	/center	CALL textstyle "center"
+:ul.	:eul.	ul	/ul
+:li.		li	/li
+:hp1.	:ehp1.	i	/i	 
+:hp5.	:ehp5.	u	/u	 
+		font	/font	CALL textstyle "font"
+		tbody	/tbody	CALL textstyle "clear"
+		body	/body	CALL textstyle "clear"
+:cgraphic.	:ecgraphic.	tt	/tt
+:title.		title	/title
+:userdoc.	:euserdoc.	html	/html
+:docprof toc=123456.		head	/head
+		style	/style
+.*		meta		CALL metadata

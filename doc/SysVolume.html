@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=IBM850" http-equiv="content-type">
+  <title>System Master Audio Volume</title>
+</head>
+<body>
+<h1>System Master Audio Volume</h1>
+<a name="SysVolume"></a>
+<b>System Master Audio Volume</b>
+<br>
+<br>
+<center><img
+ style="width: 256px; height: 256px;" alt="" src="SysVolume.png"></center>
+<br>
+<p style="text-align: center;">Adjust master volume of system</p>
+<p style="text-align: center;"><a href="#License_agreement">Copyright© 2020,<br>
+Jan-Erik LÑrka</a></p>
+<p style="text-align: center;"><a href="http://www.xn-lrka-loa.com/">http://www.xn-lrka-loa.com/</a></p>
+<h1>License agreement</h1>
+<a name="License_agreement"></a>
+<b>License agreement</b>
+<br>
+<br>
+<p>Copyright∏ 2020, Jan-Erik LÑrka</p>
+<p>All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without
+modification,
+are permitted provided that the following conditions are met:
+</p>
+<p>1. Redistributions of source code must retain the above copyright
+notice,
+this list of conditions and the following disclaimer.
+</p>
+<p>2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation
+and/or other materials provided with the distribution.
+</p>
+<p>3. Neither the name of "Jan-Erik LÑrka" nor the names of its
+contributors
+may be used to endorse or promote products derived from this software
+without
+specific prior written permission.
+</p>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</p>
+<h1>About</h1>
+<a name="About"></a><span style="font-weight: bold;">About</span><br>
+<br>
+System Master Audio Volume<br>
+<span style="font-style: italic;">Version 1.0 build 1</span><br>
+<br>
+The main purpose (beside world dominance ;-) of the application is to <br>
+<ul compact="compact">
+  <li>Provide a flexible solution to adjust the master audio volume for
+the whole system
+  </li>
+  <li>Visually appealing appearance at a wide range of sizes
+  </li>
+  <li>Contain a compact mode with maintained functionality
+  </li>
+</ul>
+<br>
+<b>Thank you</b>
+<br>
+<ul compact="compact">
+  <li><span style="font-weight: bold;">Gabriele Gamba</span> and <span
+ style="font-style: italic;">eCSoft/2</span> ( <a
+ href="https://ecsoft2.org/">https://ecsoft2.org</a>
+) for the excellent cooperation and the online software catalogue</li>
+  <li><span style="font-weight: bold;">RÅdiger Ihle</span> for your posting in the forum of OS/2 World about MASTERAUDIO
+</ul>
+<h1>Installation</h1>
+<a name="Installation"></a><span style="font-weight: bold;">Prerequisites
+</span><br>
+<br>
+OS/2 multimedia system with support for REXX<br>
+<br>
+<span style="font-weight: bold;">Installation</span>
+<br>
+<br>
+Unpack to a destination&nbsp; folder and create a Program object on the
+desktop.<br>
+<h1>User interface - Overview</h1>
+<a name="Overview"></a>
+<b>Overview</b><br>
+<br>
+<img style="width: 168px; height: 135px;" alt="" src="SysVolume50.png"><br>
+<br>
+The application window consists of buttons to
+<ul compact="compact">
+  <li><a href="Mute">mute</a></li>
+  <li><a href="Increase">increase</a></li>
+  <li><a href="Decrease">decrease</a></li><br>
+the master audio volume,<br>
+or to switch to/from
+  <li><a href="#Compact mode">compact mode</a></li>
+</ul><br>
+but also show
+<ul compact="compact">
+  <li>percentage value</li>
+  <li>position indicator</li>
+</ul>
+<br>
+<h2>Full mode</h2>
+<a name="Full mode"></a>
+<b>Full mode</b><br>
+<img style="width: 400px; height: 305px;" alt="" src="Sizeable.png"><br>
+<br>
+The volume can be controlled with a<br>
+<br>
+Mouse click on<br>
+<ul compact="compact">
+  <li>buttons</li>
+  <li>sides of the knob</li>
+</ul><br>
+or the
+<ul compact="compact">
+  <li><a href="#Keyboard">keyboard</a></li>
+</ul><br>
+The knob adapt the size to window size<br>
+<br>
+A tooltip appear as the mouse pointer hoover over buttons and
+the master audio volume control inform about the current setting or
+what the button do.<br>
+<br>
+<img style="width: 203px; height: 135px;" alt="" src="SysVolume71.png"><br>
+<br>
+<span style="font-weight: bold;">Top Left</span><br>
+<img style="width: 16px; height: 16px;" alt="" src="DeMute.png">Master
+Audio Volume is <a href="Mute">active</a> to output sound<br>
+<img style="width: 16px; height: 16px;" alt="" src="Mute.png">Master
+Audio Volume has been <a href="Mute">muted</a> and disable&nbsp;<img
+ style="width: 14px; height: 14px;" alt="" src="MinusButton.png">, <img
+ style="width: 14px; height: 14px;" alt="" src="PlusButton.png"> and the
+percentage text.<br>
+<br>
+<span style="font-weight: bold;">Top Right</span><br>
+<img style="width: 16px; height: 16px;" alt="" src="SBar.png">Click to
+switch to <a href="#Compact mode">compact mode</a><br>
+<br>
+<span style="font-weight: bold;">Bottom Left</span><br>
+<img style="width: 14px; height: 14px;" alt="" src="MinusButton.png"><a
+ href="Decrease">Decrease</a> Master Audio Volume by 5 percent<br>
+<br>
+<span style="font-weight: bold;">Bottom Right</span><br>
+<img style="width: 14px; height: 14px;" alt="" src="PlusButton.png"><a
+ href="Increase">Increase</a> Master Audio Volume by 5 percent<br>
+<a name="Increase">Click + or RIGHT ARROW on the keyboard to increase the volume by 5 percent</a>
+<a name="Decrease">Click - or LEFT ARROW on the keyboard to decrease the volume by 5 percent</a>
+<a name="Mute">Click on DEL, DELETE or BACKSPACE on the keyboard to toggle Mute Audio on/off</a>
+<br>
+<h2>Compact mode</h2>
+<a name="Compact mode"></a><span style="font-weight: bold;">Compact mode</span><br>
+<br>
+<img style="width: 292px; height: 48px;" alt="" src="MiniSized.png"><br>
+The application window consists of buttons to <a href="MuteCompact">mute</a> and switch
+<a href="#Full mode">from compact mode</a> as well as show a percentage value indicator.<br>
+<ul compact="compact">
+  <li>Adjust the volume with the mouse or the <a href="#Keyboard">keyboard</a>.</li>
+  <li>The slider adapt the width to the window.</li>
+  <li>Tooltip on buttons and the master audio volume control
+</ul><br>
+<img style="width: 194px; height: 63px;" alt="" src="CompactMode.png"><br>
+<span style="font-weight: bold;">Left</span><br>
+<img style="width: 16px; height: 16px;" alt="" src="DeMute.png">Master
+Audio Volume is <a href="MuteCompact">active</a> to output sound<br>
+<img style="width: 16px; height: 16px;" alt="" src="Mute.png">Master
+Audio Volume has been <a href="MuteCompact">muted</a><br>
+<br>
+<span style="font-weight: bold;">Right</span><br>
+<img style="width: 16px; height: 16px;" alt="" src="SKnob.png">Click to
+switch <a href="#Full mode">from compact mode</a><br>
+<a name="IncreaseCompact">Click + or RIGHT ARROW on the keyboard to increase the volume by 5 percent</a>
+<a name="DecreaseCompact">Click - or LEFT ARROW on the keyboard to decrease the volume by 5 percent</a>
+<a name="MuteCompact">Click on DEL, DELETE or BACKSPACE on the keyboard to toggle Mute Audio on/off</a>
+<h1>Keyboard</h1>
+<a name="Keyboard"></a><span style="font-weight: bold;">Keyboard</span>
+<table border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><b>Key</b></td>
+      <td><b>Explenation</b></td>
+      <td><b>Usage</b></td>
+    </tr>
+    <tr>
+      <td>+ or &rarr;</td>
+      <td>Plus<br>
+Right arrow</td>
+      <td>Increase the volume by 5 percent</td>
+    </tr>
+    <tr>
+      <td>- or &larr;</td>
+      <td>Minus<br>
+Left arrow</td>
+      <td>Decrease the volume by 5 percent</td>
+    </tr>
+    <tr>
+      <td>DEL<br>
+BACKSPACE</td>
+      <td>Delete<br>
+Backspace</td>
+      <td>Toggle Mute Audio</td>
+    </tr>
+    <tr>
+      <td>_</td>
+      <td>Underscore</td>
+      <td>Toggle Compact mode</td>
+    </tr>
+    <tr>
+      <td>F1</td>
+      <td>First F key</td>
+      <td>Open this help</td>
+    </tr>
+  </tbody>
+</table>
+<h1>Related tools</h1>
+<a name="Related"></a><span style="font-weight: bold;">Related tools<br>
+</span>html2hlp.cmd (with html2hlp.add)<br>
+<ul>
+  <li>This help file was created with the help of a HTML-style file
+that was parsed by html2hlp into a .ipf-file and compiled by ipfc.
+Please note that you need to install the OS2TK45 (not only with yum) to
+use ipfc.</li>
+</ul>
+</body>
+</html>
